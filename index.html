@@ -38,9 +38,9 @@
 				theNewDiv.classList.add("auto-div");
 				//set the text inside the div
 				theNewDiv.innerHTML = document.getElementById("textInput").value;
-				
+
 				//find the right tag to add the div to
-				//we used an id of "content-area" for 
+				//we used an id of "content-area" for
 				//the place where we want to add the chirp
 				let theContentArea = document.getElementById("content-area");
 
@@ -53,15 +53,15 @@
 				let theNewDiv = document.createElement("div");
 				//add a class to our new div element
 				theNewDiv.classList.add("auto-div");
-				
+
 				//create image tag to put into the div
 				theImgTag = "<img src='" + document.getElementById("imgInput").value + "' width = 100 height = 100>";
 
 				//set the text inside the div
 				theNewDiv.innerHTML = theImgTag;
-				
+
 				//find the right tag to add the div to
-				//we used an id of "content-area" for 
+				//we used an id of "content-area" for
 				//the place where we want to add the twit
 				let theContentArea = document.getElementById("content-area");
 
@@ -70,8 +70,12 @@
 
 
 			}
+			<label for="file">Select a image file from your device.":</label>
 
+       <input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg">
 		</script>
-		
+
 	</body>
 </html>
